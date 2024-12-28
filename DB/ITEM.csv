@@ -1,0 +1,41 @@
+"id","name","image","ingredients","price","extra"
+"23","Coca Cola Light","https://drinkss.s3.amazonaws.com/Coca_Cola_Light.png","Agua, edulcorantes, colorante, ácido fosfórico, cafeína","3",NULL
+"24","Coca Cola Zero","https://drinkss.s3.amazonaws.com/Coca_Cola_Zero.png","Agua, edulcorantes, colorante, ácido fosfórico, cafeína","3",NULL
+"25","Agua Azul","https://drinkss.s3.amazonaws.com/Azul.png","Agua purificada","2",NULL
+"26","Agua Con Gas","https://drinkss.s3.amazonaws.com/Agua_Con_Gas.png","Agua carbonatada","2",NULL
+"27","Green Cola","https://drinkss.s3.amazonaws.com/Green_Cola.png","Agua, azúcar, colorante natural, ácido cítrico, cafeína","2",NULL
+"28","Agua Rosa","https://drinkss.s3.amazonaws.com/Rosa.png","Agua, colorante natural, saborizante artificial","2",NULL
+"29","Trina Limón","https://drinkss.s3.amazonaws.com/Trina.png","Agua, azúcar, ácido cítrico, saborizante natural de limón","2",NULL
+"22","Coca Cola","https://drinkss.s3.amazonaws.com/Coca_Cola_Normal.png","Agua, azúcar, colorante, ácido fosfórico, cafeína","3",NULL
+"46","Simple Bacon","https://burguers.s3.amazonaws.com/SIMPLE_BACON.png","Beef Patty, Bacon, Lettuce, Tomato","10",NULL
+"30","Alitas de pollo","https://frieds.s3.amazonaws.com/Alitas_De_Pollo.png","Pollo, sazonador","11",NULL
+"31","Aros de cebolla","https://frieds.s3.amazonaws.com/Aros_De_Cebolla.png","Cebolla, harina","9",NULL
+"32","Bolitas de pollo","https://frieds.s3.amazonaws.com/Bolitas_De_Pollo.png","Pollo, trigo","10",NULL
+"33","Chilli cheese bites","https://frieds.s3.amazonaws.com/Chilli_Cheese_Bites.png","Chilly, queso","8",NULL
+"34","Nuggets","https://frieds.s3.amazonaws.com/Nuggets.png","Pollo, harina","7",NULL
+"35","Patatas queso","https://frieds.s3.amazonaws.com/Patatas_Queso.png","Patatas, queso","6",NULL
+"36","Patatas supreme","https://frieds.s3.amazonaws.com/Patatas_Supreme.png","Patatas, sazonador","6",NULL
+"37","Supreme sour","https://frieds.s3.amazonaws.com/Supreme_Sour.png","Ajo, mayonesa","7",NULL
+"38","Cookie Dough","https://dessserts.s3.amazonaws.com/Cookie_Dough.png","Chocolate, nata","10",NULL
+"39","Fusion Kit Kat","https://dessserts.s3.amazonaws.com/Fusion_KIT_KAT.png","KitKat, Helado ","13",NULL
+"40","Fusion Milka Oreo","https://dessserts.s3.amazonaws.com/Fusion_Milka_Oreo.png","Milka, Oreo","12",NULL
+"41","Fusion Milka","https://dessserts.s3.amazonaws.com/Fusion_Milka.png","Milka, Helado","11",NULL
+"42","Fusion Nutella","https://dessserts.s3.amazonaws.com/Fusion_Nutella.png","Nutella, Chocolate, Helado","14",NULL
+"43","Fusion Oreo","https://dessserts.s3.amazonaws.com/Fusion_Oreo.png","Oreo, Helado, Nata","11",NULL
+"44","Shake Oreo Chocolate","https://dessserts.s3.amazonaws.com/Shake_Oreo_Chocolate.png","Oreo, Chocolate, Helado","8",NULL
+"45","Shake Oreo Original","https://dessserts.s3.amazonaws.com/Shake_Oreo_Original.png","Helado de Vainilla, Oreo","8",NULL
+"47","Simple CBO","https://burguers.s3.amazonaws.com/SIMPLE_CBO.png","Queso, Bacon, Cebolla, Lechuga","11",NULL
+"48","Simple Cheddar Huevo","https://burguers.s3.amazonaws.com/SIMPLE_CHEDDAR_HUEVO.png","Queso Chédar, Huevo","11",NULL
+"49","Simple Cheddar","https://burguers.s3.amazonaws.com/SIMPLE_CHEDDAR.png","Queso Chédar, Lechuga","9",NULL
+"50","Simple Cheeseburger","https://burguers.s3.amazonaws.com/SIMPLE_CHEESEBURGUER.png","Queso, Pepinillos","9",NULL
+"51","Simple Crispy","https://burguers.s3.amazonaws.com/SIMPLE_CRISPY.png","Pollo Crispy, Lechuga, Tomate","9",NULL
+"52","Simple Legend","https://burguers.s3.amazonaws.com/SIMPLE_LEGEND.png","Aros de Cebolla, Salsa Barbacoa","10",NULL
+"53","Simple Pollo","https://burguers.s3.amazonaws.com/SIMPLE_POLLO.png","Pollo Parrilla, Lechuga, Tomate","9",NULL
+"54","Doble Bacon","https://double-burguers.s3.amazonaws.com/DOBLE_BACON.png","Bacon, Lechuga, Tomate","13",NULL
+"55","Doble Big Mac","https://double-burguers.s3.amazonaws.com/DOBLE_BIG_MAC.png","Salsa Especial, Lechuga, Tomate","15",NULL
+"56","Doble Cheeseburger","https://double-burguers.s3.amazonaws.com/DOBLE_CHEESEBURGUER.png","Queso, Pepinillos","12",NULL
+"57","Doble Cuarto de Libra","https://double-burguers.s3.amazonaws.com/DOBLE_CUARTO_DE_LIBRA.png","Queso, Cebolleta, Pepinillos","13",NULL
+"58","Doble Intensa Cheddar Huevo Doble","https://double-burguers.s3.amazonaws.com/DOBLE_INTENSA_CHEDDAR_HUEVO_DOBLE.png","Queso Chédar, Huevo","14",NULL
+"59","Doble Intense Cheddar","https://double-burguers.s3.amazonaws.com/DOBLE_INTENSE+CHEDDAR.png","Queso Chédar, Lechuga","13",NULL
+"60","Doble Mac Mac","https://double-burguers.s3.amazonaws.com/DOBLE_MAC_MAC+.jpg","Salsa Mac, Lechuga, Queso","14",NULL
+"61","Doble Mc Pollo","https://double-burguers.s3.amazonaws.com/DOBLE_MAC_POLLO.png","Pollo Parrilla, Lechuga, Tomate","12",NULL

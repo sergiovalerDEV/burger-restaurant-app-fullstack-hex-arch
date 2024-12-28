@@ -1,0 +1,35 @@
+.top-space {
+    display: flex;
+    width: 100vw;
+    height: auto; /* Altura automática */
+    font-family: var(--mainFont);
+    flex-wrap: wrap; /* Cambiado a wrap */
+    color: var(--mainColor);
+    background-color: var(--footerColor);
+    margin: 0 auto;
+    justify-content: center;
+    gap: 50px;
+}
+
+.top-space-text {
+    align-items: center;
+    justify-content: center;
+    display: flex; /* Establece el contenedor como un flexbox */
+    position: relative; /* Necesario para el posicionamiento del pseudo-elemento */
+    height: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.top-space-text::after {
+    content: "";
+    position: absolute;
+    top: 50%; /* Centra verticalmente */
+    right: -5px; /* Ajusta el espacio entre el texto y la barra */
+    transform: translateY(-50%); /* Centra verticalmente respecto al texto */
+    height: 70%;
+    width: 2px; /* Ancho de la barra */
+    background-color: var(--mainColor);
+}
+

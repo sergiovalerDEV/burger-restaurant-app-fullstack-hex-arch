@@ -1,0 +1,26 @@
+
+:root{
+
+    /*ALL DOCUMENT*/
+    overflow-x: hidden;
+    --mainColor: #F5EBDC;
+    --buttonColor: #D62300;
+    --footerColor:#502314;
+    --mainFont: 'Flame', sans-serif;
+
+    /*  HEADER   */
+    --headerColor: rgb(138, 47, 5);
+
+    /*  BURGUER SELLING   */
+    --burguerSellingColor: rgb(255, 239, 97);
+    --burguerSellingCardColor: rgb(235, 161, 77);
+    --burguerSellingYellow: #FFAA00;
+
+    /*  WINDOW BUTTONS  */
+    --windowButtonsBackgroundColor: rgb(245, 235, 220);
+    --windowButtonsColor: #71492a;
+
+    /*  SHOPPINGCART    */
+    --extraBackground: rgb(0, 0, 0, 0);
+    --noExtraBackground: rgb(255, 0, 0);
+}

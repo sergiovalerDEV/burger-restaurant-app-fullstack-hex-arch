@@ -1,0 +1,18 @@
+protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setContentType("text/plain;charset=UTF-8");
+        String action = request.getParameter("ACTION");
+        String[] arrayAction = action.split("\\.");
+
+        PrintWriter out = response.getWriter();
+
+        switch (arrayAction[0]) {
+            case "USUARIO":
+                System.out.println("Someone access to user");
+                out.println("Response = Usuario");
+                break;
+            case "PELICULA":
+                System.out.println("Someone access to pelicula");
+                break;
+        }
+        out.close();
+    }

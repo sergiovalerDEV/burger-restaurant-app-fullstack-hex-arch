@@ -1,0 +1,76 @@
+#itemsTicketWindow > .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#itemsTicketWindow > .flex > .item{
+    width: 20vw;
+    min-height: 180px;
+    height: 180px;
+
+    border-radius: 5px;
+
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media screen and (orientation: portrait){
+    #itemsTicketWindow > .flex{
+        width: 100vw;
+    }
+
+    #itemsTicketWindow > .flex > .item{
+        width: 280px;
+    }
+}
+
+#itemsTicketWindow > .flex > .item > .commonInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+#itemsTicketWindow > .flex > .item > .commonInfo > img{
+    width: 100px;
+}
+
+#itemsTicketWindow > .flex > .item > .priceInfo{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    align-items: center;
+}
+
+#itemsTicketWindow > .flex > .item > .priceInfo > .buttons{
+    display: flex;
+    gap: 5px;
+}
+
+#itemsTicketWindow > .flex > .item > .priceInfo > .buttons > *{
+    width: 30px;
+    height: 30px;
+
+    background-color: var(--footerColor);
+
+    border: 0px;
+
+    border-radius: 5px;
+
+    box-sizing: content-box;
+
+    text-align: center;
+
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#itemsTicketWindow > .flex > .item > .priceInfo > .buttons > *::placeholder{
+    color: var(--mainColor);
+}

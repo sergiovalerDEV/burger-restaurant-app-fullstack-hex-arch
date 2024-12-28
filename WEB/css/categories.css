@@ -1,0 +1,138 @@
+/*#categories {
+    width: 99.85%;
+    height: 160vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}*/
+
+#categories > .flex {
+    width: 100vw;
+    height: 88vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-y: hidden;
+}
+
+#categories > .flex > .card {
+    width: 33.16vw;
+    height: 44vh;
+    background-color: var(--burguerSellingCardColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0; /* Agregado */
+    gap: 50px;
+    font-family: var(--mainFont);
+    font-size: 50px;
+    color: var(--mainColor);
+    text-align: center;
+}
+
+#categories > .flex > .card p{
+    font-size: 50px;
+}
+
+
+#categories > .flex > .card p:hover{
+    cursor: pointer;
+}
+
+#categories > .flex > .card img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s ease-in-out;
+}
+
+#categories > .flex > .card img{
+    /*El tamaño de estas imágenes es manejadod desde JavaScript*/
+    transition: 0.3s ease-in-out;
+   
+}
+
+#categories > .flex > .card:nth-child(1) {
+    background-color: var(--footerColor);
+}
+
+#categories > .flex > .card:nth-child(2) {
+    background-color: var(--buttonColor);
+}
+
+#categories > .flex > .card:nth-child(3) {
+    background-color: var( --burguerSellingYellow);
+}
+
+#categories > .flex > .card:nth-child(4) {
+    background-color: #336633; /* Verde oscuro */
+}
+
+#categories > .flex > .card:nth-child(5) {
+    background-color: #e7c782;
+}
+
+#categories > .flex > .card:nth-child(6) {
+    background-color: rgb(155, 154, 154); /* O cualquier otro color neutro */
+}
+
+
+/*@media para mobile*/
+@media screen and (max-width: 768px) {
+
+    #categories > .flex {
+        width: 100vw;
+        height: 90vh;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow-y: hidden;
+        transform: translateY(-30vh);
+        
+    }
+    
+    #categories .card{
+        height: 100px;
+    }
+    #categories > .flex > .card {
+        width: 49.8vw;
+        height: 30vh;
+        background-color: var(--burguerSellingCardColor);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0; /* Agregado */
+        font-family: var(--mainFont);
+        font-size: 50px;
+        color: var(--mainColor);
+        text-align: center;
+    }
+    
+    #categories > .flex > .card p{
+        font-size: 20px;
+    }
+    
+}
+
+/*@media only screen and (max-width: 17in) {
+
+  
+    #categories > .flex > .card {
+        width: 48vw;
+        height: 70vh;
+        overflow:hidden;
+    }
+
+    #categories > .flex > .card img {
+        width: 90%;
+        height: 100%;
+    }
+    
+}*/

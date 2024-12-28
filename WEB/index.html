@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/windows.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/index.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/root.css'>
+    <link rel="stylesheet" type="text/css" media='screen' href="css/scrollbar.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/login.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/register.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/shoppingcart.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/tickets.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/itemsTicket.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/categories.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/burguerSelling.css'>
+    <link rel="stylesheet" type="text/css" media='screen' href="css/top-space.css">
+    <link rel="stylesheet" type="text/css" media='screen' href="css/middle-space.css">
+    <link rel="stylesheet" type="text/css" media='screen' href="css/burguer-abajo.css">
+    <link rel="stylesheet" type="text/css" media='screen' href="css/historia.css">
+    <link rel="stylesheet" type="text/css" media='screen' href="css/burguer-static-collage.css">
+    <link rel="stylesheet" type="text/css" media='screen' href="css/post-selling-container.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/footer.css'>
+
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+</head>
+<body id="blurBody">
+    <!-- <div id="closedCartContainer2"></div> -->
+    <div class="header-foto">
+        <nav>
+            <div class="logo">
+                <img src="./img/puig-logo.png" alt="Puig Logo">
+            </div>
+            <ul id="menuList">
+                <!-- <li><a onclick="pruba()">PRUEBA</a></li> -->
+                <li><a href="">HOME</a></li>
+                <li><a href="">CATEGORIAS</a></li>
+                <li><a href="">SERVICIOS</a></li>
+                <li><a href="">NOSOTROS</a></li>
+            </ul>
+            <div>
+                <button class="header-btn" id="loginHeaderButton">LOGIN</button>
+                <button class="header-btn" id="shoppingcartHeader">CARRITO</button>
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+        </nav>
+    </div>
+
+    <div class="window" id="login">
+        <div class="windowButtons">
+            <button id="exitLogin">Exit</button>
+        </div>
+        <div class="fields">
+            <input class="name" type="text" placeholder="Name">
+            <input class="password" type="password" placeholder="Password">
+            <input class="address" type="text" placeholder="Address">
+        </div>
+        <button id="loginButton">Login</button>
+        <button id="logoutButton">Logout</button>
+    </div>
+
+    <div class="window" id="register">
+        <div class="windowButtons">
+            <button id="backRegister"> Back</button>
+            <button id="exitRegister">Exit</button>
+        </div>
+        <div class="fields">
+            <input class="name" type="text" placeholder="Name">
+            <input class="password" type="password" placeholder="Password">
+            <input class="address" type="text" placeholder="Address">
+        </div>
+        <div class="finalButtons">
+            <button id="registerButton" onclick="registerButton">Register</button>
+        </div>
+    </div>
+
+    <div id="shoppingcart">
+        <button id="exitShoppingcart">Exit Shoppingcart</button>
+        <div class="flex">
+            <!-- <div class="item">
+                <div class="commonInfo">
+                    <img src="">
+                    <p>Burguer 1</p>
+                </div>
+                <div class="priceInfo">
+                    <p>10.81€</p>
+                    <div class="buttons">
+                        <button>+</button>
+                        <input type="text" placeholder="3">
+                        <button>-</button>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- <div class="w3-border" style="width:300px" id="outerBar">
+            <div class="w3-brown"  id="innerBar"></div>
+        </div> -->
+        <button id="buyShoppingcart">Buy</button>
+        <button id="tickets">Tickets</button>
+    </div>
+
+    <div class="window" id="ticketsWindow">
+        <div class="windowButtons">
+            <button id="exitTicketsWindow">Exit</button>
+        </div>
+        <div class="flex">
+
+        </div>
+    </div>
+
+    <div class="window" id="itemsTicketWindow">
+        <div class="windowButtons">
+            <button id="backItemsTicketWindow">Back</button>
+            <button id="exitItemsTicketWindow">Exit</button>
+        </div>
+        <div class="flex">
+
+        </div>
+    </div>
+    
+    <div class="texto">
+        <p>¿QUÉ TE APETECE PEDIR HOY?</p>
+        <button class="header-btn-buy">COMPRAR</button>
+    </div>
+
+
+    
+    <div id="categories">
+        <div class="flex">
+            <div class="card">
+                <img src="">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="burguerSelling">
+        <div class="flex"></div>
+    </div>
+
+    <div class="burguer-abajo">
+        <img src="./img/burguer-abajo.jpg">
+
+    </div>
+
+
+    
+    <div class="historia">
+        <div class="historia-text">
+            <h1>Somos parrilleros desde 1933</h1>
+            <p>Sabemos que nuestras hamburguesas a la parrilla
+                te hacen tilín. Si miras en su interior, descubrirás
+                que su carne es 100% vacuno, sin conservantes ni aditivos,
+                provenientes de la Península Ibérica para e disfrute de
+                todos y cada uno de los habitantes de este nuestro
+                Reino de España
+            </p>
+        </div>
+    </div>
+    
+    
+    <div class="burguer-static-collage">
+        <img src="./img/collage-1.jpg">
+        <img src="./img/collage-2.webp">
+        <img src="./img/collage-3.jpg">
+        <img src="./img/collage-4.png">
+        <img src="./img/collage-5.jpg">
+        <img src="./img/collage-6.jpg">
+        <img src="./img/collage-7.webp">
+        <img src="./img/collage-8.jpg">
+    </div>
+
+
+    <div class="top-space">
+        <div class="top-space-text">
+            <p>PREGUNTAS FRECUENTES</p>
+        </div>
+        <div class="top-space-text">
+            <p>OPINIONES Y SUGERENCIAS</p>
+        </div>
+        <div class="top-space-text">
+            <p>AVISO LEGAL</p>
+        </div>
+        <div class="top-space-text">
+            <p>CONDICIONES GENERALES</p>
+        </div>
+        <div class="top-space-text">
+            <p>POLÍTICAS DE PRIVACIDAD</p>
+        </div>
+        <div class="top-space-text">
+            <p>CONFIGURACIÓN COOKIES</p>
+        </div>
+    </div>
+
+    <div class="middle-space">
+        <h2>EN NUESTRA WEB</h2>
+    </div>
+    <footer>
+        <div class="footer-col">
+            <h4>products</h4>
+            <ul>
+                <li><a href="#">teams</a></li>
+                <li><a href="#">advertising</a></li>
+                <li><a href="#">talent</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>network</h4>
+            <ul>
+                <li><a href="#">technology</a></li>
+                <li><a href="#">science</a></li>
+                <li><a href="#">business</a></li>
+                <li><a href="#">professional</a></li>
+                <li><a href="#">API</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+                <li><a href="#">about</a></li>
+                <li><a href="#">legal</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/localStorage.js"></script>
+    <script src="js/events.js"></script>
+
+    <script src="js/header/header.js"></script>
+
+    <script src="js/login/funcionality.js"></script>
+    <script src="js/login/windowManager.js"></script>
+
+    <script src="js/register/funcionality.js"></script>
+    <script src="js/register/windowManager.js"></script>
+    
+    <script src="js/categories/windowManager.js"></script>
+    <script src="js/categories/funcionality.js"></script>
+
+    <script src="js/burguerSelling/windowManager.js"></script>
+    <script src="js/burguerSelling/funcionality.js"></script>
+
+    <script src="js/shoppingcart/windowManager.js"></script>
+    <script src="js/shoppingcart/funcionality.js"></script>
+
+    
+    <script src="js/tickets/windowManager.js"></script>
+    <script src="js/tickets/tickets.js"></script>
+    <script src="js/tickets/itemsTicket/windowManager.js"></script>
+    <script src="js/tickets/itemsTicket/funcionality.js"></script>
+
+
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

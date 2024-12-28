@@ -1,0 +1,40 @@
+.historia {
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    background-color: var(--footerColor);
+}
+
+.historia-text{
+    width: 100%;
+    font-family: var(--mainFont);
+    color: var(--mainColor);
+}
+
+.historia-text h1{
+    text-align: center;
+    font-size: 90px;
+}
+
+.historia-text p{
+    max-width: 61%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .historia-text p{
+        max-width: 90%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .historia-text h1{
+        text-align: center;
+        font-size: 30px;
+    }
+}

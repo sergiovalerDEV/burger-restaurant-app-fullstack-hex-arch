@@ -1,0 +1,96 @@
+/* Centrar todo el contenido */
+#burguerSelling{
+    background-color: var(--burguerSellingCardColor);
+}
+
+#burguerSelling .flex {
+    display: flex; /* Agrega esta línea */
+    width: 99.3vw;
+    height: auto;
+    margin: 0 auto; /* Centrado horizontal */
+    justify-content: center; /* Centrado vertical */
+    margin-bottom: 20px; 
+    z-index: 5;
+}
+
+#burguerSelling .flex > .card {
+    width: 350px;
+    height: 40vh;
+    margin: 0 auto;
+    /*background-color: rgb(230, 217, 203);*/
+    background-color: rgb(232, 232, 233);
+    margin-top: 20px;
+    margin-right: 20px; /* Espacio entre las tarjetas */
+    margin-left: 20px;
+    margin-bottom: 20px; /* Espacio inferior entre las tarjetas */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+
+
+#burguerSelling .flex > .card img {
+    width: 100%;
+    height: 60%;
+    object-fit: contain;
+    margin-top: 0; /* Ajuste para colocar la imagen en el borde superior */
+    transition: 0.3s ease;
+    background-color: var(--burguerSellingCardColor); 
+
+    transform: translateY(-15%);
+}
+
+#burguerSelling .flex > .card img:hover {
+    cursor: pointer; /* Cambia el cursor solo cuando se pasa sobre la imagen */
+    transform: scale(1.1);
+    background: none;
+}
+
+.flex > .card p {
+    font-family: var(--mainFont);
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+#burguerSelling .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Espacio entre las tarjetas */
+    background-color: var(--mainColor);
+}
+
+/* Aplicar estilos adicionales a las imágenes dentro de las tarjetas */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card button {
+    width: 100%;
+    z-index: 2;
+    background-color: var(--burguerSellingCardColor); 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: var(--mainFont);
+    transition: 0.3s ease;
+    transform: translateY(110%);
+    left: 50%; /* Centra el botón horizontalmente */
+}
+
+.buy-button:hover{
+    background-color: #3e8e41;
+    transition: 0.3s ease;
+}

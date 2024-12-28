@@ -1,0 +1,33 @@
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+
+@WebServlet(name="Controller", urlPatterns = {"/controller/*"})
+public class Controller extends HttpServlet {
+
+    final String EXAMPLE1 = "example1";
+    final String EXAMPLE2 = "example2";
+
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+            response.setHeader("Access-Control-Allow-Origin", "*");
+            response.setContentType("text/plain;charset=UTF-8");
+
+        System.out.println("Path: " + req.getPathInfo());
+
+        String startWith = req.getPathInfo().split("/")[1];
+
+        switch (startWith){
+            case EXAMPLE1:
+                User user = new User();
+                user.callNecesaryMethod(req.getPathInfo(), req, resp);
+                break;
+            case EXAMPLE2:
+                Item item = new Item();
+                item.callNecesaryMethod(req.getPathInfo(), req, resp);
+                break;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+.burguer-abajo {
+    display: flex;
+    justify-content: center; /* Centra en el eje X */
+    width: 100%;
+    height: 50vh;
+}
+
+.burguer-abajo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

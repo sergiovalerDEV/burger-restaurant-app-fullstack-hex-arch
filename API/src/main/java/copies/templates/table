@@ -1,0 +1,30 @@
+package tablescarefull;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class User {
+    final String originalPath = "/user";
+
+    final String getallPath = originalPath + "/getall";
+    final String addPath = originalPath + "/add";
+
+    public void callNecesaryMethod(String path, HttpServletRequest request, HttpServletResponse response){
+        switch (path){
+            case getallPath:
+                getAll();
+                break;
+            case addPath:
+                add();
+                break;
+        }
+    }
+
+    void getAll(){
+        System.out.println("Get all the users");
+    }
+
+    void add(){
+        System.out.println("Add one user");
+    }
+}

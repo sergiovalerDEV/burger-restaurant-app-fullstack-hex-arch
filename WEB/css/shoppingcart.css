@@ -1,0 +1,217 @@
+#shoppingcart{
+    width: 50vw;
+    /* min-width: 320px; */
+    height: calc(100vh - 100px);
+
+    background-color: var(--footerColor);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    top: 100px;
+    left: 50vw;
+    position: fixed;
+
+    z-index: 10;
+}
+
+#shoppingcart > #outerBar{
+    width: 300px;
+    height: 10px;
+    border: 1px var(--mainColor) solid;
+    border-radius: 10px;
+}
+
+#shoppingcart > #outerBar > #innerBar{
+    width: 100%;
+    height: 100%;
+    border-radius: 10PX;
+    background-color: var(--mainColor);
+}
+
+@media screen and (orientation: portrait){
+    
+    #shoppingcart{
+        width: 100vw;
+        height: calc(100vh - 100px);
+
+        left: 0px;
+    }
+}
+
+#shoppingcart > #exitShoppingcart,
+#buyShoppingcart,
+#tickets{
+    width: 300px;
+    height: 50px;
+
+    background-color: var(--mainColor);
+    
+    border: 0px;
+    border-radius: 20px;
+
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--footerColor)--
+}
+
+#shoppingcart > .flex{
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+
+
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+
+    overflow-y: auto;
+}
+
+#shoppingcart > .flex::-webkit-scrollbar{
+    left: 10000px;
+}
+
+#shoppingcart > .flex > .item{
+    min-width: 280px;
+    width: 20vw;
+    min-height: 180px;
+    height: 180px;
+
+    border-radius: 5px;
+
+    background-color: antiquewhite;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    position: relative;
+}
+
+@media screen and (orientation: portrait){
+    #shoppingcart > .flex{
+        width: 100vw;
+    }
+
+    #shoppingcart > .flex > .item{
+        width: 280px;
+    }
+}
+
+#shoppingcart > .flex > .item > .commonInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+#shoppingcart > .flex > .item > .commonInfo > img{
+    width: 100px;
+}
+
+#shoppingcart > .flex > .item > .priceInfo{
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    align-items: center;
+}
+
+#shoppingcart > .flex > .item > .priceInfo > .buttons{
+    display: flex;
+    gap: 5px;
+}
+
+#shoppingcart > .flex > .item > .priceInfo > .buttons > *{
+    width: 30px;
+    height: 30px;
+
+    background-color: var(--footerColor);
+
+    border: 0px;
+
+    border-radius: 5px;
+
+    box-sizing: content-box;
+
+    text-align: center;
+
+    color: var(--mainColor);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#shoppingcart > .flex > .item > .priceInfo > .buttons > :last-child{
+    width: 60px;
+}
+
+#shoppingcart > .flex > .item > .priceInfo > .buttons > *::placeholder{
+    color: var(--mainColor);
+}
+
+.extras-container{
+    min-width: 60px;
+    height: 100%;
+    /* min-height: 100px; */
+
+    border-radius: 5px;
+    
+    background-color: var(--burguerSellingCardColor);
+    
+    z-index: -1;
+
+    position: absolute;
+    left: calc(100% - 60px);
+
+    transition: 1s;
+
+    /* transform: scaleX(20); */
+
+    /* transform: translateX(calc(60px - 5px)); */
+}
+
+.extras-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: -1;
+}
+
+.extras-container > div > img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 4px var(--noExtraBackground) solid;
+    background-color: var(--extraBackground);
+}
+
+/* #shoppingcart > .flex > .item > p{
+    text-align: center;
+    <div id="shoppingcart">
+        <button id="exitShoppingcart"></button>
+        <div class="flex">
+            <div class="item">
+                <div class="commonInfo">
+                    <img src="">
+                    <p>Burguer 1</p>
+                </div>
+                <div class="priceInfo">
+                    <p>Price</p>
+                    <div class="buttons">
+                        <button>+</button>
+                        <input type="text" placeholder="0">
+                        <button>-</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+} */

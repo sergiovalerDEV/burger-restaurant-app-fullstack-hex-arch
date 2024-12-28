@@ -1,0 +1,16 @@
+.middle-space {
+    width: 100vw;
+    height: 50px;
+    font-family: var(--mainFont);
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* Added for vertical centering */
+    display: flex; /* Added */
+    color: var(--footerColor);
+    background-color: var(--mainColor);
+    margin: 0 auto;
+}
+
+.middle-space h2 {
+    margin: 0; /* Remove margin: 0 auto; */
+}

@@ -1,0 +1,61 @@
+/* #ticketsWindow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+    background-color: var(--footerColor);
+    position: fixed;
+    left: calc(50vw - 30vw);
+    top: calc(50vh - 30vh);
+    width:60vw;
+    height: 60vh;
+} */
+
+.cart-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px; /* Espacio entre las tarjetas */
+    width: auto;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    background-color: var(--mainColor); /* Color de fondo */
+    text-align: center;
+}
+
+.cart-card p {
+    margin: 0; /* Eliminar márgenes predeterminados */
+}
+
+.cart-card p:first-child {
+    font-weight: bold; /* Hacer negrita el primer párrafo */
+}
+
+.cart-card p:not(:first-child) {
+    color: #666; /* Color de texto gris para los párrafos que no son el primero */
+}
+
+/* .cart-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.cart-card p {
+    margin: 0;
+}
+
+.cart-card p:first-child {
+    font-weight: bold;
+}
+
+.cart-card p:not(:first-child) {
+    color: #666;
+} */

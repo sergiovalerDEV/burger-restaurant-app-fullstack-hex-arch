@@ -1,0 +1,69 @@
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.HashMap;
+import java.util.Map;
+
+@WebServlet(name="Controller", urlPatterns = {"/Controller/*"})
+public class Controller extends HttpServlet {
+    /*@Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        System.out.println("Hola");
+        processRequest(req, resp);
+
+        System.out.println(req.getRequestURL());
+    }*/
+
+    private final Map<String, Handler> handlerMap = new HashMap<>();
+
+
+    @Override
+    public void init() {
+        System.out.println("llego");
+        handlerMap.put("/user", this::handleUser);
+        handlerMap.put("/pelicula", this::handlePelicula);
+    }
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setContentType("text/plain;charset=UTF-8");
+        String action = request.getParameter("ACTION");
+        String[] arrayAction = action.split("\\.");
+
+        PrintWriter out = response.getWriter();
+
+        switch (arrayAction[0]) {
+            case "USUARIO":
+                System.out.println("Someone access to user");
+                out.println("Response = Usuario");
+                break;
+            case "PELICULA":
+                System.out.println("Someone access to pelicula");
+                break;
+        }
+        out.close();
+    }
+
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+        // Your routing logic here
+        System.out.println(req.getPathInfo());
+    }
+
+    private void handleUser(HttpServletRequest request, HttpServletResponse response) {
+        // Handler logic for "/user" route
+        System.out.println("Handling user");
+    }
+
+    private void handlePelicula(HttpServletRequest request, HttpServletResponse response) {
+        // Handler logic for "/pelicula" route
+    }
+
+    // Functional interface for handler methods
+    @FunctionalInterface
+    private interface Handler {
+        void handle(HttpServletRequest request, HttpServletResponse response);
+    }
+}
