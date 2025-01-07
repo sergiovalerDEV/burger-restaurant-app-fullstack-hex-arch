@@ -54,13 +54,10 @@ This project serves as a practical exploration of:
 
 ## 🛠️ Technologies Used
 
-- Backend: Java, Spring Boot
-- Frontend: JavaScript, React
+- Backend: Java
+- Frontend: Native CSS, JavaScript
 - Database: PostgreSQL
-- ORM: Hibernate
-- API Documentation: Swagger
 - Version Control: Git
-- Security: Spring Security
 
 ## 🔜 Future Enhancements
 
